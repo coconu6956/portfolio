@@ -30,7 +30,6 @@
         width: 100%;
         height: 100%;
         z-index: -10;
-        background: url(../images/bg2.jpg) no-repeat center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -333,13 +332,12 @@
         width: 70%;
         height: 80%;
         position: relative;
-        background: url("../images/sea4.png") center center no-repeat;
         background-size: cover;
         top: 5%;
     }
 
     .txt_bg {
-        background: url(../images/text_mob2.png) center center no-repeat;
+        background: url(../images/bg/txt/text.png) center center no-repeat;
         background-size: 91%;
         top: -3%;
     }
