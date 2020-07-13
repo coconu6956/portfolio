@@ -1,0 +1,102 @@
+/* Modal CSS */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal_content {
+    margin: auto;
+    border: 1px solid #888;
+    max-width: 90%;
+    min-width: 320px;
+    z-index: 9999;
+}
+
+.modal_content.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+.modal_header {
+    width: 100%;
+    background-color: #363636;
+    padding: 1rem 1.2rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.modal_header:after , .modal_header:before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.modal_header .modal_title {
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: -1.3px;
+    float: left;
+    position: relative;
+    top: 0.35rem;
+}
+
+/* The Close Button */
+.modal_header .modal_close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.modal_header .modal_close:hover,
+.modal_header .modal_close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal_body {
+    padding: 1.7rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-color: #fefefe;
+}
+
+.modal_body::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Handle */
+.modal_body::-webkit-scrollbar-thumb {
+  background: #363636;
+}
+
+.modal_footer {
+    padding: 1rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-color: #fefefe;
+}
+
+.modal_footer .btn_block {
+    text-align: right;
+}
+
+.modal_footer .btn_block button, .modal_footer .btn_block button a {
+    margin-left: 0.7rem;
+}

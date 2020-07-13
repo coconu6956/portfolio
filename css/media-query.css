@@ -1,0 +1,478 @@
+@media screen and (max-width:1370px) {
+    #design .modal .close {
+        right: 10%;
+    }
+
+    section {
+        padding-top: 10px;
+        margin-top: 0px;
+        width: 100%;
+        display: block;
+    }
+
+    section:nth-of-type(1) {
+        padding-top: 10px;
+        margin-top: 0px;
+    }
+
+    #contact {
+        background: none;
+        padding: 0;
+        position: relative;
+    }
+
+    #contact:before {
+        content: "";
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        background: url(../images/bg2.jpg) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    #about .skill {
+        margin-bottom: 0px;
+        padding-bottom: 40px;
+    }
+
+    #projects .portfolio {
+        padding-bottom: 50px;
+        margin-bottom: 0px;
+    }
+
+    footer {
+        position: relative;
+        bottom: 0;
+    }
+
+}
+
+/*태블릿 화면크기 481~980px 사이즈까지 적용 */
+@media screen and (max-width:980px) {
+    header {}
+
+    #top_nav {
+        height: 60px;
+        line-height: 60px;
+        z-index: 999999999;
+    }
+
+    #top_nav #gnd_right #logo {
+        margin-left: 0px;
+        width: 200px;
+        margin-top: 5px;
+    }
+
+    #top_nav #gnd_left {
+        display: none;
+        top: 0;
+        background: rgba(0, 0, 0, 0.61);
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        z-index: 999999;
+        margin-right: 0px;
+    }
+
+    #top_nav #gnd_left ul {
+        position: relative;
+        width: 100%;
+        top: 30%;
+    }
+
+    #top_nav #gnd_left li {
+        display: block;
+        font-family: 'CaviarDreams', 'NanumSquare';
+        text-align: center;
+        width: 100%;
+        height: 50px;
+        color: #fff;
+        margin-right: 0px;
+        font-size: 1.8em;
+        font-weight: 800;
+    }
+
+    .logo {
+        width: 180px !important;
+    }
+
+    /*햄버거 메뉴 */
+    .menu-trigger.active-1 {
+        display: table;
+    }
+
+    .menu-trigger {
+        display: block;
+        float: right;
+        margin-right: 10px;
+        margin-top: 5px;
+        z-index: 999999999;
+    }
+
+    .menu-trigger,
+    .menu-trigger span {
+        display: inline-block;
+        transition: all .4s;
+        box-sizing: border-box;
+    }
+
+    .menu-trigger {
+        position: relative;
+        width: 50px;
+        height: 44px;
+        transform: scale(0.75);
+    }
+
+    .menu-trigger span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background-color: #ff6f61;
+        border-radius: 4px;
+    }
+
+    .menu-trigger span:nth-of-type(1) {
+        top: 0;
+    }
+
+    .menu-trigger span:nth-of-type(2) {
+        top: 20px;
+    }
+
+    .menu-trigger span:nth-of-type(3) {
+        bottom: 0;
+    }
+
+    /* 중앙 라인이 고정된 자리에서 투명하게 사라지며 상하라인 회전하며 엑스자 만들기 */
+    .menu-trigger.active-1 span:nth-of-type(1) {
+        -webkit-transform: translateY(20px) rotate(-45deg);
+        transform: translateY(20px) rotate(-45deg);
+    }
+
+    .menu-trigger.active-1 span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .menu-trigger.active-1 span:nth-of-type(3) {
+        -webkit-transform: translateY(-20px) rotate(45deg);
+        transform: translateY(-20px) rotate(45deg);
+    }
+
+    #about {
+        width: inherit;
+    }
+
+    #about .intro {
+        margin-top: 80px;
+        display: block;
+        clear: both;
+    }
+
+    #about .intro img {
+        position: relative;
+        width: 300px;
+        right: 0;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #about .intro h2 {
+        position: relative;
+        display: block;
+        text-align: center;
+        top: 0px;
+        margin-top: 50px;
+        left: 0px;
+        font-size: 3.2em;
+        font-weight: 300;
+    }
+
+    #about .intro h3 {
+        position: relative;
+        width: 90%;
+        margin: 30px auto 100px auto;
+        display: block;
+        text-align: center;
+        height: 200px;
+        top: 0px;
+        left: 0px;
+        /*margin-top:30px; margin-bottom: 100px;*/
+    }
+
+    #about div > h2 {
+        text-align: center;
+    }
+
+    #about article {
+        width: 100%;
+    }
+
+    #about .edu {
+        width: 80%;
+        margin: 130px auto 0px auto;
+        float: none;
+        top: 0;
+    }
+
+    #about .license {
+        width: 50%;
+        margin: 100px auto 0px auto;
+        float: none;
+    }
+
+    #about .skill {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*project*/
+
+
+    #projects .portfolio,
+    .portfolio_2 img {
+        margin-bottom: 0px;
+    }
+
+    #projects .portfolio,
+    .portfolio_2 {
+        /*margin-bottom: 100px;*/
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #projects .portfolio:first-of-type {
+        margin-top: 0px;
+    }
+
+
+    .portfolio img,
+    .portfolio_2 img {
+        width: 85%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .portfolio h2,
+    .portfolio_2 h2 {
+        font-size: 1.8em;
+    }
+
+    .portfolio > .sub_txt {
+        float: none;
+        margin-left: 0px;
+    }
+
+    .portfolio_2 > .sub_txt {
+        float: none;
+        margin-left: 0px;
+    }
+
+    .sub_txt {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .sub_txt > p {
+        margin-top: 10px;
+        font-size: 1em;
+    }
+
+    .sub_txt > p:first-of-type {
+        margin-top: 20px;
+    }
+
+    .btn {
+        background: #ff6f61;
+    }
+
+    .btn a {
+        color: #fff;
+    }
+
+
+    /*project*/
+    #design .img-list {
+        text-align: left;
+        max-width: 608px;
+    }
+
+    #design .modal .modal-content {
+        width: 80%;
+        max-width: 700px;
+    }
+
+    #design .modal .close {
+        right: 2.5%;
+    }
+
+
+}
+
+/*모바일 화면크기 0~480px 사이즈까지 적용 */
+@media screen and (max-width:480px) {
+    /*#top_nav { height: 60px; line-height: 60px; }
+	.menu-trigger {
+		transform: scale(0.65);
+		margin-top: 5px;
+		margin-right: 5px;
+	}
+	#top_nav #gnd_right #logo { margin-top: 5px;}*/
+
+    #photo {
+        width: 70%;
+        height: 80%;
+        position: relative;
+        background: url("../images/sea4.png") center center no-repeat;
+        background-size: cover;
+        top: 5%;
+    }
+
+    .txt_bg {
+        background: url(../images/text_mob2.png) center center no-repeat;
+        background-size: 91%;
+        top: -3%;
+    }
+
+    #home_text > h3 {
+        font-size: 0.8em;
+    }
+
+    #about .intro h3 {
+        font-size: .9em;
+    }
+
+    #about div > h2 {
+        font-size: 1.5em;
+    }
+
+    #about div {
+        font-size: 0.9em;
+    }
+
+    /*#about .edu {width:95%; display: block;}
+	#about .license {width:95%;}
+	#about .skill {width:95%; }*/
+    #about .skill > ul {
+        width: 70%;
+    }
+
+    #about .skill > ul li {
+        margin-bottom: 15px;
+    }
+
+    #about .skill > ul li .list {
+        height: 10px;
+    }
+
+    #about .skill > ul li .list > span {
+        height: 10px;
+    }
+
+    #about article {
+        margin-top: 100px;
+    }
+
+    .percent {
+        font-size: .8em;
+        width: 35px;
+        height: 20px;
+        line-height: 20px;
+        top: -70px;
+    }
+
+    /*project*/
+
+    .sub_txt > p {
+        margin-top: 10px;
+        font-size: 1em;
+    }
+
+    .sub_txt > p:first-of-type {
+        margin-top: 20px;
+    }
+
+    .sub_txt h4 {
+        font-size: 1em;
+        margin-top: 10px;
+    }
+
+    .portfolio h2,
+    .portfolio_2 h2 {
+        font-size: 1.4em;
+    }
+
+    .portfolio h2 > p,
+    .portfolio_2 h2 > p {
+        font-size: .5em;
+        margin-left: 6px;
+    }
+
+    .portfolio h2 > p {}
+
+    .portfolio_2 h2 > p {}
+
+    .portfolio h2::after,
+    .portfolio_2 h2::after {
+        content: '|';
+        margin-left: 2.5px;
+
+    }
+
+    .btn {
+        width: 100px;
+        height: 40px;
+        border: 1.5px solid #ff6f61;
+        margin: 30px 0 0 10px;
+    }
+
+    .btn a {
+        font-size: 1em;
+        line-height: 40px;
+    }
+
+    /*project*/
+
+    #design .img-list {
+        text-align: center;
+    }
+
+    #design .modal .close {
+        right: 2%;
+    }
+
+    #contact > div > ul {
+        font-size: 1em;
+        top: 13%;
+    }
+
+    #contact > div > ul li {
+        height: 70px;
+    }
+
+    #contact > div > ul li > img {
+        width: 35px;
+        top: 14px;
+        margin-right: 5px;
+    }
+
+    footer {
+        font-size: 0.95em;
+        height: auto;
+        position: static;
+    }
+
+
+}
+
+/*모바일 화면크기 0~480px 사이즈까지 적용 */
