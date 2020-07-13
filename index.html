@@ -37,7 +37,6 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About me</a></li>
                         <li><a href="#projects">Projects</a></li>
-                        <!--<li><a href="#design">Design</a></li>-->
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -169,40 +168,6 @@
                 </div>
             </div>
         </section>
-        <!--
-        <section id="design" class="contents">
-            <h1 class="title" style="color:#fff;">Design</h1>
-            <ul class="img-list">
-                <li data-aos="fade-up" data-aos-duration="1500"><a href="#imgModal">
-                        <p><img src="images/plus.png" alt="확대"></p><img class="imgSrc" src="images/design1.jpg" alt="출석 체크 이벤트 페이지">
-                    </a></li>
-                <li data-aos="fade-up" data-aos-duration="1500"><a href="#imgModal">
-                        <p><img src="images/plus.png" alt="확대"></p><img class="imgSrc" src="images/design2.jpg" alt="오픈 이벤트 페이지">
-                    </a></li>
-                <li data-aos="fade-up" data-aos-duration="1500"><a href="#imgModal">
-                        <p><img src="images/plus.png" alt="확대"></p><img class="imgSrc" src="images/design3.jpg" alt="멈칫 상세페이지">
-                    </a></li>
-                <li data-aos="fade-up" data-aos-duration="1500"><a href="#imgModal">
-                        <p><img src="images/plus.png" alt="확대"></p><img class="imgSrc" src="images/design4.jpg" alt="나이키 배너">
-                    </a></li>
-                <li data-aos="fade-up" data-aos-duration="1500"><a href="#imgModal">
-                        <p><img src="images/plus.png" alt="확대"></p><img class="imgSrc" src="images/design5.png" alt="지마켓 배너">
-                    </a></li>
-                <li data-aos="fade-up" data-aos-duration="1500"><a href="#imgModal">
-                        <p><img src="images/plus.png" alt="확대"></p><img class="imgSrc" src="images/design6.jpg" alt="대명 투어 배너">
-                    </a></li>
-                <li data-aos="fade-up" data-aos-duration="1500"><a href="#imgModal">
-                        <p><img src="images/plus.png" alt="확대"></p><img class="imgSrc" src="images/design7.jpg" alt="탐앤탐스 배너">
-                    </a></li>
-            </ul>
-            //Modal
-            <div id="imgModal" class="modal">
-                <p class="close"></p>
-                <img class="modal-content" alt="디자인이미지">
-                <div class="caption"></div>
-            </div>
-        </section>
-        -->
         <section id="contact" class="contents">
             <div class="bg_wrap">
                 <h1 class="title" style="margin-top:0">Contact me</h1>
@@ -222,28 +187,6 @@
     <script src="js/script.js"></script>
     <script>
         AOS.init();
-    </script>
-
-    <script>
-        var $modal = $("#imgModal"); //팝업 div
-        var imgsUrl; //이미지 url
-        var altText; //이미지안 alt값 출력
-        $(".img-list li>a").on("click", function() { //클릭 이벤트
-            var _index = $(this).parent().index(); //해당 index 찾기
-            var _indexTar = $(".img-list li").eq(_index); //해당 인덱스
-            $(".img-list li").removeClass("open"); //"open" 클래스 삭제
-            _indexTar.addClass("open"); //"open" 클래스 추가
-            imgsUrl = _indexTar.find(".imgSrc").attr("src"); //이미지 경로에 src경로 찾기
-            altText = _indexTar.find(".imgSrc").attr("alt"); //이미지 경로에 alr값 찾기
-            $modal.find(".caption").text(altText); // 팝업 텍스트 출력
-            $modal.find(".modal-content").attr("src", imgsUrl); //해당 팝업 안에 이미지 넣기
-            $modal.find(".modal-content").attr("id", ""); //팝업안 이미지 순서
-            $modal.find(".modal-content").attr("id", "imgs_" + _index); //팝업안 이미지 순서
-            $modal.fadeIn(); //팝업 열기
-        });
-        $(".close").on("click", function() {
-            $modal.fadeOut(); //팝업 닫기
-        });
     </script>
     <!--연도 JS-->
     <script>
