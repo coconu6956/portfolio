@@ -33,19 +33,10 @@ $(document).ready(function () {
                 el_logo = $('#logo');
             var windowTop = $(window).scrollTop(); // returns number
             if (windowTop > 0) {
-                el.css({
-                    position: 'fixed',
-                    top: 0,
-                    background: "rgba(240,240,240,0.92)",
-                    borderBottom: "1px solid #ddd"
-                });
+                el.addClass('scroll');
                 el_logo.addClass('logo');
             } else {
-                el.css({
-                    position: "relative",
-                    background: "none",
-                    borderBottom: "none"
-                });
+                el.removeClass('scroll');
                 el_logo.removeClass('logo');
             }
         });

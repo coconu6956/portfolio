@@ -37,6 +37,13 @@ header {
     transition: all 1.2s ease-in;
 }
 
+#top_nav.scroll {
+    position: fixed;
+    top: 0;
+    background-color: rgba(240,240,240,0.92);
+    border-bottom: 1px solid #ddd;
+}
+
 #top_nav #gnd_right #logo {
     width: 300px;
     margin-left: 20px;
@@ -315,20 +322,21 @@ section:last-of-type {
     position: relative;
 }
 
-#about div > ul {
+#about .info_list {
     margin-left: 5px;
+    margin-top: 3em;
     text-align: left;
 }
 
-#about div > ul li {
+#about .info_list li {
     position: relative;
-    display: inline-block;
     width: 100%;
-    height: 50px;
-    line-height: 50px;
+    margin-bottom: 2em;
+    line-height: 1.2;
+    display: flex;
 }
 
-#about div > ul li > span {
+#about .info_list li .date {
     font-size: 1.2em;
     font-weight: bold;
     margin-right: 15px;
@@ -347,34 +355,23 @@ section:last-of-type {
     margin-right: 15px;
 }
 
-#about article {
+#about .info_wrapper {
     position: relative;
     text-align: center;
-    /*margin-top:50px;*/
     margin: 50px auto;
-    width: 80%;
-    display: block;
 }
 
 #about .edu {
-    width: 45%;
-    display: inline-block;
-    /*margin-right: 10%; top:-50px;*/
-    position: relative;
+    width: 80%;
 }
 
 #about .license {
-    width: 45%;
-    display: inline-block;
-    margin-left: 5%;
-    position: relative;
+    width: 80%;
 }
 
 #about .skill {
     width: 100%;
     clear: both;
-    margin-top: 100px;
-    margin-bottom: 50px;
     text-align: center;
 }
 

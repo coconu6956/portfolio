@@ -211,14 +211,14 @@
     }
 
     #about .edu {
-        width: 80%;
+        width: 90%;
         margin: 130px auto 0px auto;
         float: none;
         top: 0;
     }
 
     #about .license {
-        width: 50%;
+        width: 60%;
         margin: 100px auto 0px auto;
         float: none;
     }
