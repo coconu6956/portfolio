@@ -1,8 +1,4 @@
 @media screen and (max-width:1370px) {
-    #design .modal .close {
-        right: 10%;
-    }
-
     section {
         padding-top: 10px;
         margin-top: 0px;
@@ -16,7 +12,6 @@
     }
 
     #contact {
-        background: none;
         padding: 0;
         position: relative;
     }
@@ -337,7 +332,7 @@
     }
 
     .txt_bg {
-        background: url(../images/bg/txt/text.png) center center no-repeat;
+        background: url(../images/bg/txt/text_mob2.png) center center no-repeat;
         background-size: 91%;
         top: -3%;
     }
