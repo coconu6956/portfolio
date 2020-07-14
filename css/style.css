@@ -3,20 +3,73 @@
 
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 
-::-webkit-selection { background: #ff6f61; color: #fff; }
+::-webkit-selection { background: #ff6f61; background: var(--main-color); color: #fff; }
 
-::-o-selection { background: #ff6f61; color: #fff; }
+::-o-selection { background: #ff6f61; background: var(--main-color); color: #fff; }
 
-::-moz-selection { background: #ff6f61; color: #fff; }
+::-moz-selection { background: #ff6f61; background: var(--main-color); color: #fff; }
 
-::-ms-selection { background: #ff6f61; color: #fff; }
+::-ms-selection { background: #ff6f61; background: var(--main-color);  color: #fff; }
 
-::selection { background: #ff6f61; color: #fff; }
+::selection { background: #ff6f61; background: var(--main-color); color: #fff; }
 
 body {
     font-family: 'CaviarDreams', 'NanumSquare', 'NotoSansKR';
     font-weight: 400;
     background: #f0f0f0;
+    background-color: var(--bg-color);
+    color: #000;
+    color: var(--m-font);
+}
+
+/* dark mode css */
+.thema_wrapper {
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    z-index: 999999;
+}
+
+.thema_wrapper .thema_btn {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ededed;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 3px 5px 0 rgba(89, 89, 89, 0.31);
+    box-shadow: 0px 3px 5px 0 rgba(89, 89, 89, 0.31);
+    box-sizing: border-box;
+}
+
+.thema_wrapper.t_on {
+    transition: all 1.2s ease-in;
+    -webkit-animation: t_circle 1.5s ease;
+    -o-animation: t_circle 1.5s ease;
+    -moz-animation: t_circle 1.5s ease;
+    -ms-animation: t_circle 1.5s ease;
+    animation-name: t_circle 1.5s ease;
+    transform-origin: right bottom;
+    
+}
+
+@keyframes t_circle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.thema_wrapper .thema_btn i {
+    font-size: 2em;
+    color: #FCA732;
 }
 
 /*header부분*/
@@ -24,6 +77,7 @@ header {
     position: relative;
     height: 100vh;
     background: #94c3cc;
+    background: var(--header-bg);
 }
 
 #top_nav {
@@ -41,7 +95,9 @@ header {
     position: fixed;
     top: 0;
     background-color: rgba(240,240,240,0.92);
+    background-color: var(--nav-bg);
     border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--nav-border);
 }
 
 #top_nav #gnd_right #logo {
@@ -193,6 +249,7 @@ header {
     font-size: 6em;
     font-weight: bolder;
     color: #ff6f61;
+    color: var(--main-color);
     display: none;
     position: absolute;
 }
@@ -243,6 +300,7 @@ section:last-of-type {
 #about {
     position: relative;
     background: #f0f0f0;
+    background: var(--bg-color);
     box-sizing: content-box;
     font-family: 'NanumSquare', 'NotoSansKR';
 }
@@ -252,6 +310,7 @@ section:last-of-type {
     font-size: 2.5em;
     display: block;
     color: #000;
+    color: var(--m-font);
     text-align: center;
     width: 100%;
     top: 50px;
@@ -289,6 +348,7 @@ section:last-of-type {
 
 #about .intro h2 > span {
     color: #ff6f61;
+    color: var(--main-color);
 }
 
 #about .intro h3 {
@@ -406,8 +466,10 @@ section:last-of-type {
 
 #about .skill > ul li .list {
     background-color: #E2E2E2;
+    background-color: var(--skill-bg);
     height: 20px;
     border: 1px solid #C1BBBB;
+    border: 1px solid var(--skill-border);
     box-sizing: border-box;
     position: relative;
 }
@@ -423,13 +485,17 @@ section:last-of-type {
     /*background-color:#ff6f61;*/
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff6f61+1,ff9f96+25,ffc2bc+47,7cc1cc+73,4db9cc+100 */
     background: #ff6f61;
+    background: var(--main-color);
     /* Old browsers */
     /*#7cc1cc 71%*/
     background: -moz-linear-gradient(-45deg, #ff6f61 1%, #ff9f96 25%, #ffc2bc 47%, #7cd6cc 73%, #4db9cc 100%);
+    background: -moz-linear-gradient(-45deg, var(--main-color) 1%, #ff9f96 25%, #ffc2bc 47%, #7cd6cc 73%, #4db9cc 100%);
     /* FF3.6-15 */
     background: -webkit-linear-gradient(-45deg, #ff6f61 1%, #ff9f96 25%, #ffc2bc 47%, #7cd6cc 73%, #4db9cc 100%);
+    background: -webkit-linear-gradient(-45deg, var(--main-color) 1%, #ff9f96 25%, #ffc2bc 47%, #7cd6cc 73%, #4db9cc 100%);
     /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(135deg, #ff6f61 1%, #ff9f96 25%, #ffc2bc 47%, #7cd6cc 73%, #4db9cc 100%);
+    background: linear-gradient(135deg, var(--main-color) 1%, #ff9f96 25%, #ffc2bc 47%, #7cd6cc 73%, #4db9cc 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6f61', endColorstr='#4db9cc', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
@@ -448,30 +514,24 @@ section:last-of-type {
 
 /*ai*/
 #about .skill > ul li:nth-of-type(3) .list span {
-    width: 85%;
-    --width: 85%;
-}
-
-/*pr*/
-#about .skill > ul li:nth-of-type(4) .list span {
     width: 90%;
     --width: 90%;
 }
 
 /*html*/
-#about .skill > ul li:nth-of-type(5) .list span {
+#about .skill > ul li:nth-of-type(4) .list span {
     width: 86%;
     --width: 86%;
 }
 
 /*css*/
-#about .skill > ul li:nth-of-type(6) .list span {
+#about .skill > ul li:nth-of-type(5) .list span {
     width: 70%;
     --width: 70%;
 }
 
 /*javascript*/
-#about .skill > ul li:nth-of-type(7) .list span {
+#about .skill > ul li:nth-of-type(6) .list span {
     width: 75%;
     --width: 75%;
 }
@@ -501,11 +561,8 @@ section:last-of-type {
 
 /*about me*/
 
-
 /*project*/
 #projects {
-    /*height: 100vh;*/
-    background: #f0f0f0;
     position: relative;
 }
 
@@ -570,6 +627,7 @@ section:last-of-type {
     font-size: 1.35em;
     margin-top: 10px;
     font-weight: 400;
+    line-height: 1.2;
 }
 
 .sub_txt > p {
@@ -612,6 +670,7 @@ section:last-of-type {
     display: inline-block;
     font-family: 'NanumSquare', 'NotoSansKR';
     color: #333;
+    color: var(--s-font);
 }
 
 .i_link_wrapper {
@@ -631,6 +690,7 @@ section:last-of-type {
 
 .i_link_wrapper .icon_link:hover {
     border: 1.5px solid #ff6f61;
+    border: 1.5px solid var(--main-color);
     transition: all .5s ease-in;
 }
 
@@ -642,6 +702,7 @@ section:last-of-type {
     width: 180px;
     height: 60px;
     border: 1.5px solid #ff6f61;
+    border: 1.5px solid var(--main-color);
     text-align: center;
     cursor: pointer;
     position: relative;
@@ -653,8 +714,12 @@ section:last-of-type {
 
 
 .btn a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
     font-size: 1.5em;
     color: #ff6f61;
+    color: var(--main-color);
     line-height: 60px;
     transition: all .5s ease;
     z-index: 2;
@@ -666,6 +731,7 @@ section:last-of-type {
     height: 100%;
     left: -100%;
     background: #ff6f61;
+    background: var(--main-color);
     position: absolute;
     transition: all .5s ease;
     z-index: 1;
@@ -812,7 +878,9 @@ footer {
     line-height: 10vh;
     text-align: center;
     background: #3b7171;
+    background: var(--footer-bg);
     color: #f0f0f0;
+    color: var(--c-font);
     box-sizing: content-box;
 }
 
@@ -877,5 +945,6 @@ footer {
     box-sizing: border-box;
     /*.color:#3b7171;*/
     color: #ff6f61 !important;
+    color: var(--main-color) !important;
     transition: all .2s;
 }

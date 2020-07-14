@@ -1,0 +1,127 @@
+:root {
+    --nav-bg: rgba(240,240,240,0.92);
+    --nav-border: #ddd;
+    --bg-color: #f0f0f0;
+    --header-bg: #94c3cc;
+    --main-color: #ff6f61;
+    --sub-color: #3b7171;
+    --footer-bg: #3b7171;
+    --m-font: #000;
+    --s-font: #333;
+    --c-font: #fff;
+    --skill-border: #C1BBBB;
+    --skill-bg: #E2E2E2;
+}
+
+/* prefers-color-scheme 를 지원하는 곳에서만 가능한 코드 */
+@media ( prefers-color-scheme : dark) {
+    :root {
+        --nav-bg: rgba(0,0,0,0.7);
+        --nav-border: #000;
+        --bg-color: #3f3f3f;
+        --header-bg: #000;
+        --m-font: #fff;
+        --s-font: #f0f0f0;
+    }
+
+}
+
+/* 유저설정에 의해 클래스가 부여되므로 모든 CSS 변수 지원브라우저에서 가능한 코드 */
+html.darkmode:root {
+    --nav-bg: rgba(0,0,0,0.7);
+    --nav-border: #000;
+    --bg-color: #1d1f21;
+    --header-bg: #000;
+    --m-font: #fff;
+    --s-font: #f0f0f0;
+    --footer-bg: #3f3f3f;
+}
+
+html.darkmode #photo { background: url(../images/bg/dark-bg-02.jpg) center center no-repeat; }
+
+html.darkmode #contact { background: url(../images/bg/dark-bg-03.jpg) center 65% no-repeat; }
+
+html.darkmode body {
+    background: #f0f0f0;
+    background-color: var(--bg-color);
+    color: #000;
+    color: var(--m-font);
+}
+
+html.darkmode header {
+    background: #94c3cc;
+    background: var(--header-bg);
+}
+
+html.darkmode #top_nav.scroll {
+    background-color: rgba(240,240,240,0.92);
+    background-color: var(--nav-bg);
+    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--nav-border);
+}
+
+html.darkmode #photo h1 {
+    color: #ff6f61;
+    color: var(--main-color);
+}
+
+html.darkmode #about {
+    background: #f0f0f0;
+    background: var(--bg-color);
+}
+
+html.darkmode .title {
+    color: #000;
+    color: var(--m-font);
+}
+
+html.darkmode #about .intro h2 > span {
+    color: #ff6f61;
+    color: var(--main-color);
+}
+
+html.darkmode #about .skill > ul li .list {
+    background-color: #E2E2E2;
+    background-color: var(--skill-bg);
+    border: 1px solid #C1BBBB;
+    border: 1px solid var(--skill-border);
+}
+
+html.darkmode .portfolio h2 > p,
+html.darkmode .portfolio_2 h2 > p {
+    color: #333;
+    color: var(--s-font);
+}
+
+html.darkmode .i_link_wrapper .icon_link:hover {
+    border: 1.5px solid #ff6f61;
+    border: 1.5px solid var(--main-color);
+}
+
+html.darkmode .btn {
+    border: 1.5px solid #ff6f61;
+    border: 1.5px solid var(--main-color);
+}
+
+
+html.darkmode .btn a {
+    color: #ff6f61;
+    color: var(--main-color);
+}
+
+html.darkmode .eff {
+    background: #ff6f61;
+    background: var(--main-color);
+}
+
+html.darkmode footer {
+    background: #3b7171;
+    background: var(--footer-bg);
+    color: #f0f0f0;
+    color: var(--c-font);
+}
+
+html.darkmode .on {
+    color: #ff6f61 !important;
+    color: var(--main-color) !important;
+}
