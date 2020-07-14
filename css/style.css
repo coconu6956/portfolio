@@ -358,15 +358,15 @@ section:last-of-type {
 #about .info_wrapper {
     position: relative;
     text-align: center;
-    margin: 50px auto;
+    margin: 5em auto;
 }
 
 #about .edu {
-    width: 80%;
+    width: 60%;
 }
 
 #about .license {
-    width: 80%;
+    width: 50%;
 }
 
 #about .skill {
@@ -528,6 +528,12 @@ section:last-of-type {
     margin-top: 150px;
 }
 
+#projects .portfolio:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
 
 .portfolio img,
 .portfolio_2 img {
@@ -606,6 +612,30 @@ section:last-of-type {
     display: inline-block;
     font-family: 'NanumSquare', 'NotoSansKR';
     color: #333;
+}
+
+.i_link_wrapper {
+    text-align: right;
+    margin-top: 1.5em;
+}
+
+.i_link_wrapper .icon_link {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #f0f0f0;
+    border: 1.5px solid #3f3f3f;
+    border-radius: 50%;
+    padding: 0.8em;
+}
+
+.i_link_wrapper .icon_link:hover {
+    border: 1.5px solid #ff6f61;
+    transition: all .5s ease-in;
+}
+
+.i_link_wrapper .icon_link img {
+    width: 100%;
 }
 
 .btn {

@@ -80,10 +80,10 @@ $(document).ready(function () {
     //skill 효과
     if ($('.skill').length) { // make sure ".skill" element exists
         $(window).scroll(function () { // scroll event
-            var el = $('.skill ul>li>.list>span');
-            var contnetTop = $('.skill').offset().top - 500; // returns number
-            var contentHeight = $('.skill').height();
-            var limit = contnetTop + contentHeight + 500;
+            let el = $('.skill ul>li>.list>span');
+            let contnetTop = $('.skill').offset().top - 500; // returns number
+            let contentHeight = $('.skill').height();
+            let limit = contnetTop + contentHeight + 500;
 
             var windowTop = $(window).scrollTop(); // returns number
 
