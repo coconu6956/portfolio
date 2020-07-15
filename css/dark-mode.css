@@ -35,6 +35,8 @@ html.darkmode:root {
     --m-font: #fff;
     --s-font: #f0f0f0;
     --footer-bg: #3f3f3f;
+    --skill-border: #000;
+    --skill-bg: #3f3f3f;
 }
 
 html.darkmode #photo { background: url(../images/bg/dark-bg-02.jpg) center center no-repeat; }
