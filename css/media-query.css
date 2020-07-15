@@ -330,8 +330,6 @@
     #photo {
         width: 70%;
         height: 80%;
-        position: relative;
-        background-size: cover;
         top: 5%;
     }
 

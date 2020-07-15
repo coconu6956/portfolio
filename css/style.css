@@ -24,12 +24,13 @@ body {
 
 /* dark mode css */
 .thema_wrapper {
-    width: 150px;
-    height: 150px;
+    width: 20%;
+    height: 15%;
     position: fixed;
     bottom: 0%;
-    right: 0%;
+    left: 0%;
     z-index: 999999;
+    border: 1px solid red;
 }
 
 .thema_wrapper .thema_btn {
@@ -53,7 +54,7 @@ body {
     -moz-animation: t_circle 1.5s ease;
     -ms-animation: t_circle 1.5s ease;
     animation-name: t_circle 1.5s ease;
-    transform-origin: right bottom;
+    transform-origin: left bottom;
     
 }
 
@@ -135,9 +136,6 @@ header {
     position: relative;
     top: 8vh;
     background: url("../images/bg/sea4.jpg") center center no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 
@@ -366,6 +364,7 @@ section:last-of-type {
 
 #about .intro h3 > span {
     color: #3b7171;
+    font-weight: 600;
     /*font-family: 'NotoSansKR','NanumSquare';*/
 }
 
@@ -742,7 +741,7 @@ section:last-of-type {
 }
 
 .btn:hover a {
-    color: #fff;
+    color: #fff !important;
 }
 
 /*project*/
@@ -836,9 +835,6 @@ section:last-of-type {
     height: 84vh;
     background: url(../images/bg/bg2.jpg) center 65% no-repeat;
     background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     color: #fff;
 }
