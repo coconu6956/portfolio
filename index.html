@@ -31,7 +31,7 @@
 <body>
     <div id="wrap">
         <div class="thema_wrapper">
-            <div class="thema_btn"><i class="fas fa-sun"></i></div>
+            <div class="thema_btn" onClick="userTheme(true);"><i class="fas fa-sun"></i></div>
         </div>
         <header id="home" class="contents">
             <nav id="top_nav">
@@ -217,13 +217,6 @@
                 $('.modal').hide();
             });
 
-        });
-    </script>
-    <script>
-        $(document).ready(function(){
-           $('.thema_wrapper .thema_btn').click(function(){
-              $('html').toggleClass('darkmode'); 
-           }); 
         });
     </script>
 </body>

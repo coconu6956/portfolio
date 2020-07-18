@@ -24,18 +24,15 @@ body {
 
 /* dark mode css */
 .thema_wrapper {
-    width: 20%;
-    height: 15%;
     position: fixed;
-    bottom: 0%;
-    left: 0%;
+    bottom: 5%;
+    left: 5%;
     z-index: 999999;
 }
 
 .thema_wrapper .thema_btn {
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
+    display: inline-block;
+    padding: 1em;
     text-align: center;
     background-color: #fff;
     border: 1px solid #ededed;
@@ -44,27 +41,6 @@ body {
     -webkit-box-shadow: 0px 3px 5px 0 rgba(89, 89, 89, 0.31);
     box-shadow: 0px 3px 5px 0 rgba(89, 89, 89, 0.31);
     box-sizing: border-box;
-}
-
-.thema_wrapper.t_on {
-    transition: all 1.2s ease-in;
-    -webkit-animation: t_circle 1.5s ease;
-    -o-animation: t_circle 1.5s ease;
-    -moz-animation: t_circle 1.5s ease;
-    -ms-animation: t_circle 1.5s ease;
-    animation-name: t_circle 1.5s ease;
-    transform-origin: left bottom;
-    
-}
-
-@keyframes t_circle {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
 }
 
 .thema_wrapper .thema_btn i {

@@ -126,6 +126,10 @@
 
 }
 
+@media (prefers-color-scheme : dark) and (max-width:980px) {
+    .btn a { color: #fff; }
+}
+
 /* 유저설정에 의해 클래스가 부여되므로 모든 CSS 변수 지원브라우저에서 가능한 코드 */
 html.darkmode:root {
     --nav-bg: rgba(31,34,40,0.92);
@@ -234,4 +238,8 @@ html.darkmode footer {
 html.darkmode .on {
     color: #ff6f61 !important;
     color: var(--main-color) !important;
+}
+
+@media screen and (max-width:980px) {
+    html.darkmode .btn a { color: #fff; }
 }
