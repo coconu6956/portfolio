@@ -35,7 +35,7 @@
         background-size: cover;
     }
 
-    html.darkmode body {
+    html body {
         background: #272B33;
         background-color: var(--bg-color);
         color: #fff;
@@ -107,7 +107,11 @@
         background: #ff6f61;
         background: var(--main-color);
     }
-
+    
+    .btn:hover a {
+        color: #fff !important;
+    }
+    
     footer {
         background: #3b7171;
         background: var(--footer-bg);
@@ -214,6 +218,10 @@ html.darkmode .btn a {
 html.darkmode .eff {
     background: #ff6f61;
     background: var(--main-color);
+}
+
+html.darkmode .btn:hover a {
+    color: #fff !important;
 }
 
 html.darkmode footer {
