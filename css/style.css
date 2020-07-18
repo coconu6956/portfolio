@@ -30,7 +30,6 @@ body {
     bottom: 0%;
     left: 0%;
     z-index: 999999;
-    border: 1px solid red;
 }
 
 .thema_wrapper .thema_btn {

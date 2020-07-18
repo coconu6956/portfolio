@@ -31,7 +31,7 @@
 <body>
     <div id="wrap">
         <div class="thema_wrapper">
-            <div class="thema_btn"><i class="fas fa-moon"></i></div>
+            <div class="thema_btn"><i class="fas fa-sun"></i></div>
         </div>
         <header id="home" class="contents">
             <nav id="top_nav">
@@ -167,7 +167,7 @@
                     <h4>팬톤 컬러 '리빙코랄'을 메인으로 디자인한 포트폴리오입니다.</h4>
                     <div class="btn">
                         <div class="eff"></div>
-                        <a href="">Veiw</a>
+                        <a href="#">Veiw</a>
                     </div>
 
                 </div>
@@ -201,30 +201,6 @@
             $('.year').text(date.getFullYear());
         });
     </script>
-    <script>
-        $(document).ready(function() {
-
-            function userTheme() {
-                window.__THEME_MODE = 'light';
-                if (!!window.matchMedia) {
-                    window.__THEME_MODE = window.matchMedia("(prefers-color-scheme: dark)").matches ? 'dark' : 'auto';
-                }
-                document.getElementsByTagName('html')[0].classList[window.__THEME_MODE === 'dark' ? 'add' : 'remove']('darkmode');
-            }
-            if (!!window.matchMedia) {
-                ['light', 'dark'].forEach(mode => {
-                    window.matchMedia(`(prefers-color-scheme: ${mode})`).addListener(e => {
-                        if (!!e.matches) {
-                            userTheme();
-                        }
-                    });
-                });
-            }
-            userTheme();
-
-        });
-    </script>
-        
     <!--modal JS-->
     <script>
         $(document).ready(function() {
@@ -245,8 +221,7 @@
     </script>
     <script>
         $(document).ready(function(){
-           $('.thema_wrapper').click(function(){
-              $(this).toggleClass('t_on'); 
+           $('.thema_wrapper .thema_btn').click(function(){
               $('html').toggleClass('darkmode'); 
            }); 
         });
