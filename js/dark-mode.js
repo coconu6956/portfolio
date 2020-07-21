@@ -2,6 +2,8 @@ function userTheme(toggle = false) {
     //let userMode = localStorage.userThemeMode || 'auto';
     let userMode = localStorage.userThemeMode;
     const osMode = !!window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? 'dark' : 'light';
+    //console.log(osMode);
+    //console.log(userMode);
     if (toggle) {
         switch (userMode) {
             case 'light':
