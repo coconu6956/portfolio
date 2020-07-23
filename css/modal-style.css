@@ -72,7 +72,7 @@
 }
 
 .modal_body {
-    padding: 1.7rem;
+    padding: 1.4rem;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     background-color: #fefefe;
@@ -84,7 +84,7 @@
 
 /* Handle */
 .modal_body::-webkit-scrollbar-thumb {
-  background: #363636;
+  background: #3b7171;
 }
 
 .modal_close { cursor: pointer; color: #000; }
@@ -105,8 +105,13 @@
 }
 
 /* exModal */
+#exModal .modal_body {
+    max-height: 60vh;
+    overflow-y: scroll;
+}
+
 .career_box {
-    margin: 2em 0;
+    margin-bottom: 2em;
     color: #000;
 }
 
