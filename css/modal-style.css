@@ -2,13 +2,12 @@
 .modal {
     display: none;
     position: fixed;
-    z-index: 999;
+    z-index: 999999999;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -32,7 +31,7 @@
 
 .modal_header {
     width: 100%;
-    background-color: #363636;
+    background-color: #fefefe;
     padding: 1rem 1.2rem;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -45,10 +44,10 @@
 }
 
 .modal_header .modal_title {
-    color: #fff;
-    font-size: 1.5rem;
+    color: #363636;
+    font-size: 1.3rem;
     line-height: 1.2;
-    font-weight: 600;
+    font-weight: 800;
     letter-spacing: -1.3px;
     float: left;
     position: relative;
@@ -59,8 +58,10 @@
 .modal_header .modal_close {
     color: #aaaaaa;
     float: right;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-weight: bold;
+    position: relative;
+    top: -2px;
 }
 
 .modal_header .modal_close:hover,
@@ -86,7 +87,7 @@
   background: #363636;
 }
 
-.modal_close { cursor: pointer; }
+.modal_close { cursor: pointer; color: #000; }
 
 .modal_footer {
     padding: 1rem;
@@ -101,4 +102,27 @@
 
 .modal_footer .btn_block button, .modal_footer .btn_block button a {
     margin-left: 0.7rem;
+}
+
+/* exModal */
+.career_box {
+    margin: 2em 0;
+    color: #000;
+}
+
+.career_box .career_title {
+    font-size: 1.2em;
+    font-weight: 800;
+    margin-bottom: 0.8em;
+}
+
+.career_box .career_info {
+    margin-bottom: 0.8em;
+    line-height: 1.2;
+}
+
+.career_box .career_link {
+    color: #ff6f61;
+    color: var(--main-color);
+    text-decoration: underline;
 }
