@@ -35,5 +35,6 @@ userTheme();
 $(document).ready(function(){
     if(window.matchMedia("(prefers-color-scheme: dark)").matches) {
         $('.thema_btn i').removeClass("fas fa-sun").addClass('fas fa-moon');  
+        $('html').addClass('darkmode');
     }
 });
