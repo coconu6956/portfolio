@@ -1,26 +1,24 @@
 function userTheme(toggle = false) {
-    let userMode = localStorage.userThemeMode || 'auto';
-    //let userMode = localStorage.userThemeMode;
-    const osMode = !!window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? 'dark' : 'light';
-    console.log(osMode);
-    console.log(userMode);
+    let userMode = localStorage.userThemeMode;
+    //console.log(userMode);
     if (toggle) {
         switch (userMode) {
-            case 'auto':
+            case 'light':
                 userMode = 'dark';
+                window.__THEME_MODE = 'dark';
                 $('.thema_btn i').removeClass("fas fa-sun").addClass('fas fa-moon');   
                 break;
             case 'dark':
                 userMode = 'light';
+                window.__THEME_MODE = 'light';
                 $('.thema_btn i').removeClass("fas fa-moon").addClass('fas fa-sun'); 
                 break;
             default:
-                userMode = 'auto';
+                userMode = 'light';
         }
         localStorage.userThemeMode = userMode;
     }
-    console.log(`current mode : ${userMode}`);
-    window.__THEME_MODE = userMode === 'auto' ? osMode : userMode;
+    //console.log(`current mode : ${userMode}`);
     document.getElementsByTagName('html')[0].classList[window.__THEME_MODE === 'dark' ? 'add' : 'remove']('darkmode');
 }
 if (!!window.matchMedia) {
