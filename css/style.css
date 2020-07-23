@@ -827,7 +827,7 @@ section:last-of-type {
     height: 84vh;
     background: url(../images/bg/bg2.jpg) center 65% no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover !important;
     color: #fff;
 }
 
