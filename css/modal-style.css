@@ -110,6 +110,15 @@
     overflow-y: scroll;
 }
 
+#exModal .modal_body::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Handle */
+#exModal .modal_body::-webkit-scrollbar-thumb {
+  background: #3b7171;
+}
+
 .career_box {
     margin-bottom: 2em;
     color: #000;
