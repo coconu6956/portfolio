@@ -370,6 +370,8 @@ section:last-of-type {
     display: flex;
 }
 
+#about .info_list.ex_list li .date { width: 20%; text-align: center; }
+
 #about .info_list li .date {
     font-size: 1.2em;
     font-weight: bold;
@@ -409,6 +411,7 @@ section:last-of-type {
     font-size: 0.8em;
     cursor:pointer;
     margin-left: 7px;
+    margin-top: 5px;
     position: relative;
     top: -1.5px;
 }
