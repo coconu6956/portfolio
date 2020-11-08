@@ -951,11 +951,24 @@ footer {
 .bg_section .title { color: #fff; }
 
 .box_wrapper { 
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-top: 8em;
+}
 
+.box_wrapper::-webkit-scrollbar {
+    display: hidden;
+}
+
+.box_wrapper::-webkit-scrollbar {
+    display: none; /* 스크롤 노출 유무 (작동엔 영향 없음) */
 }
 
 .p_box {
     width: 300px;
+    display: inline-block;
     background: #f0f0f0;
     background: var(--bg-color);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.65);
