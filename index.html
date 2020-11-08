@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Chae-Eun Portfolio</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="apple-touch-icon" href="images/favicon/icon2.png">
     <link rel="icon" href="images/favicon/icon2.png">
     <link rel="stylesheet" href="css/reset.css">
@@ -43,10 +43,11 @@
                 </a>
                 <div id="gnd_left">
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About me</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#home" onClick="e.preventDefault;">Home</a></li>
+                        <li><a href="#about" onClick="e.preventDefault;">About me</a></li>
+                        <li><a href="#projects" onClick="e.preventDefault;">Projects</a></li>
+                        <li><a href="#practice" onClick="e.preventDefault;">Practice</a></li>
+                        <li><a href="#contact" onClick="e.preventDefault;">Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -169,7 +170,35 @@
                         <div class="eff"></div>
                         <a href="#">Veiw</a>
                     </div>
-
+                </div>
+            </div>
+        </section>
+        <section id="practice" class="contents bg_section v_scroll">
+            <h1 class="title">Practice</h1>
+            <div class="container">
+                <div class="box_wrapper">
+                    <div class="p_box">
+                        <a href="//netflix-clone-1212f.web.app/" target="_blank">
+                            <div class="p_thum">
+                                <img src="images/practice-thum/netfilx-clone-thum.jpg" alt="netfilx-clone coding">
+                            </div>
+                            <div class="p_txt">
+                                <h3 class="p_title">netfilx-clone coding</h3>
+                                <p class="p_desc">React, TMDB API, firebase</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="p_box">
+                        <a href="//coconu6956.github.io/moving-gradient/" target="_blank">
+                            <div class="p_thum">
+                                <img src="images/practice-thum/moving-gradient-thum.jpg" alt="moving-gradient">
+                            </div>
+                            <div class="p_txt">
+                                <h3 class="p_title">moving-gradient</h3>
+                                <p class="p_desc">canvus, Javascript</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
