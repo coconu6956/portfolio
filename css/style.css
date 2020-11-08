@@ -945,6 +945,7 @@ footer {
 
 .bg_section {
     background: #8ab2a4;
+    background: var(--bg-section);
     padding-bottom: 130px;
 }
 

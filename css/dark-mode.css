@@ -3,6 +3,7 @@
     --nav-border: #ddd;
     --bg-color: #f0f0f0;
     --header-bg: #94c3cc;
+    --bg-section: #8ab2a4;
     --main-color: #ff6f61;
     --sub-color: #3b7171;
     --footer-bg: #3b7171;
@@ -139,11 +140,17 @@ html.darkmode:root {
     --m-font: #fff;
     --s-font: #f0f0f0;
     --footer-bg: #283144;
+    --bg-section: #161a23;
 }
 
 html.darkmode #photo {
     background: url(../images/bg/photo-dark-05.jpg) center center no-repeat;
     background-size: cover;
+}
+
+html.darkmode .bg_section {
+    background: #161a23;
+    background: var(--bg-section);
 }
 
 html.darkmode #contact {
