@@ -321,6 +321,9 @@
 
 /*모바일 화면크기 0~480px 사이즈까지 적용 */
 @media screen and (max-width:480px) {
+    body {
+        overflow-x: hidden;
+    }
     /*#top_nav { height: 60px; line-height: 60px; }
 	.menu-trigger {
 		transform: scale(0.65);
@@ -444,6 +447,19 @@
 
     #design .img-list {
         text-align: center;
+        white-space: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    #design .img-list::-webkit-scrollbar { display: none; }
+
+    #design .img-list li {
+        width: 200px;
+        height: 200px;
+        margin: 2em 1em;
     }
 
     #design .modal .close {
