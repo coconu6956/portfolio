@@ -445,7 +445,7 @@
 
     /*project*/
 
-    #design .img-list {
+    #design .img_list {
         text-align: center;
         white-space: nowrap;
         overflow-x: scroll;
@@ -454,9 +454,9 @@
         width: 100%;
     }
 
-    #design .img-list::-webkit-scrollbar { display: none; }
+    #design .img_list::-webkit-scrollbar { display: none; }
 
-    #design .img-list li {
+    #design .img_list li {
         width: 200px;
         height: 200px;
         margin: 2em 1em;
