@@ -625,6 +625,7 @@ section:last-of-type {
     text-align: right;
     margin-top: 10px;
     font-size: 1.3em;
+    line-height: 1.5;
 }
 
 .sub_txt > p:first-of-type {

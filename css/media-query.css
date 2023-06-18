@@ -420,10 +420,6 @@
         margin-left: 6px;
     }
 
-    .portfolio h2 > p {}
-
-    .portfolio_2 h2 > p {}
-
     .portfolio h2::after,
     .portfolio_2 h2::after {
         content: '|';
