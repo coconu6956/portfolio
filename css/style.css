@@ -27,7 +27,7 @@ body {
     position: fixed;
     bottom: 5%;
     left: 5%;
-    z-index: 999999;
+    z-index: 15;
 }
 
 .thema_wrapper .thema_btn {
@@ -63,7 +63,7 @@ header {
     height: 60px;
     line-height: 70px;
     box-sizing: border-box;
-    z-index: 99999999 !important;
+    z-index: 15 !important;
     transition: all 1.2s ease-in;
 }
 
@@ -199,7 +199,7 @@ header {
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: 99999;
+    z-index: 10;
 }
 
 #home_text > h3 {
@@ -236,7 +236,7 @@ header {
     height: 100%;
     opacity: 0;
     margin: 0 auto;
-    z-index: 99;
+    z-index: 9;
     transition: all .4s;
     -webkit-animation: opacity 2.1s ease-in forwards;
     -o-animation: opacity 2.1s ease-in forwards;
@@ -370,7 +370,7 @@ section:last-of-type {
     display: flex;
 }
 
-#about .info_list.ex_list li .date { width: 20%; text-align: center; }
+#about .info_list.ex_list li .date { width: 25%; text-align: center; }
 
 #about .info_list li .date {
     font-size: 1.2em;
@@ -625,6 +625,7 @@ section:last-of-type {
     text-align: right;
     margin-top: 10px;
     font-size: 1.3em;
+    line-height: 1.5;
 }
 
 .sub_txt > p:first-of-type {
@@ -745,7 +746,7 @@ section:last-of-type {
 } 
 
 
-#design .img-list {
+#design .img_list {
     text-align: left;
     margin-top: 150px;
     width: auto;
@@ -755,7 +756,7 @@ section:last-of-type {
     margin-bottom: 130px;
 }
 
-#design .img-list li {
+#design .img_list a {
     height: 240px;
     width: 240px;
     margin: 30px;
@@ -767,7 +768,7 @@ section:last-of-type {
 }
 
 
-#design .img-list > li > a {
+/* #design .img-list > li > a {
     position: absolute;
     top: 0;
     left: 0;
@@ -778,14 +779,14 @@ section:last-of-type {
     -o-transition: all 0.4s ease-in-out 0s;
     -ms-transition: all 0.4s ease-in-out 0s;
     transition: all 0.4s ease-in-out 0s;
-}
+} */
 
-#design .img-list > li > a p {
+#design .img_list a p {
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
-    z-index: 999;
+    z-index: 3;
     width: 100%;
     height: 100%;
     display: block;
@@ -795,37 +796,36 @@ section:last-of-type {
     transition: all .4s;
 }
 
-#design .img-list > li > a p > img {
+#design .img_list a p > img {
     position: absolute;
     width: 30%;
     top: 35%;
-    z-index: 100;
+    z-index: 1;
     left: 0%;
     right: 0;
     margin: auto;
 }
 
-#design .img-list > li > a .imgSrc {
+#design .img_list a .imgSrc {
     width: 130%;
     max-width: 1300px;
     min-height: 150%;
     position: absolute;
     top: -25%;
     left: -15%;
-    z-index: 99;
+    z-index: 2;
 }
 
-#design .img-list > li > a:hover p {
+#design .img_list a:hover p {
     opacity: 0.7;
 }
 
-#design .modal {display: none; position: fixed;z-index: 999999999; padding-top: 100px; left: 0; top: 0;width: 100%; height: 100%; overflow: auto;background: rgba(0, 0, 0, 0.7);}
+#design .modal {display: none; position: fixed; z-index: 17; padding-top: 100px; left: 0; top: 0;width: 100%; height: 100%; overflow: auto;background: rgba(0, 0, 0, 0.7);}
 #design .modal .modal-content {
     margin: auto;
     display: block;
     width: auto;
     max-width: 60%;
-	vertical-align: top;
 	margin-top:60px;
 	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
     -webkit-transition: .5s ease-in-out;
@@ -837,7 +837,16 @@ section:last-of-type {
 
 #design .modal .caption {margin: auto;display: block; width: 80%;max-width: 700px;text-align: center;font-size: 1.2em;font-weight: 400;color: #ccc;padding: 10px 0; height: 150px;
 }
-#design .modal .close { position: fixed; right:15%; display: block; width: 50px; height: 50px; background: url(../images/icon/error.png) no-repeat; background-size: contain; cursor: pointer; vertical-align: top;}
+#design .modal .close { 
+    position: fixed; 
+    right:15%; 
+    display: block; 
+    width: 50px; 
+    height: 50px; 
+    background: url(../images/icon/error.png) no-repeat; 
+    background-size: contain; 
+    cursor: pointer; 
+}
 
 
 /* Design*/
@@ -1032,4 +1041,11 @@ footer {
 
 .p_box .p_txt .p_desc {
     width: 100%;
+}
+.chocolat-wrapper .chocolat-bottom {
+    background: #272B33 !important; 
+}
+.chocolat-description {
+    font-weight: 700;
+    color: #fff;
 }

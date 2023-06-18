@@ -7,7 +7,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
+    overflow: hidden;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -17,6 +17,7 @@
     border: 1px solid #888;
     max-width: 90%;
     min-width: 320px;
+    max-height: 95%;
     z-index: 9999;
 }
 
@@ -35,6 +36,7 @@
     padding: 1rem 1.2rem;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
 }
 
 .modal_header:after , .modal_header:before {
@@ -76,6 +78,9 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     background-color: #fefefe;
+    width: auto;
+    max-height: 70vh;
+    overflow-y: auto;
 }
 
 .modal_body::-webkit-scrollbar {
@@ -84,7 +89,7 @@
 
 /* Handle */
 .modal_body::-webkit-scrollbar-thumb {
-  background: #3b7171;
+  background: #59BCCC;
 }
 
 .modal_close { cursor: pointer; color: #000; }
@@ -94,6 +99,7 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     background-color: #fefefe;
+    border-top: 1px solid #ddd;
 }
 
 .modal_footer .btn_block {
@@ -102,21 +108,6 @@
 
 .modal_footer .btn_block button, .modal_footer .btn_block button a {
     margin-left: 0.7rem;
-}
-
-/* exModal */
-#exModal .modal_body {
-    max-height: 60vh;
-    overflow-y: scroll;
-}
-
-#exModal .modal_body::-webkit-scrollbar {
-  width: 7px;
-}
-
-/* Handle */
-#exModal .modal_body::-webkit-scrollbar-thumb {
-  background: #3b7171;
 }
 
 .career_box {
@@ -132,7 +123,7 @@
 
 .career_box .career_info {
     margin-bottom: 0.8em;
-    line-height: 1.2;
+    line-height: 1.5;
 }
 
 .career_box .career_link {

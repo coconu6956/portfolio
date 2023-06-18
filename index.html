@@ -6,6 +6,12 @@
     <title>Chae-Eun Portfolio</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- S: open graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://coconu6956.github.io/portfolio/">
+    <meta property="og:title" content="안녕하세요! 문채은입니다 :)">
+    <meta property="og:description" content="저의 포트폴이오 사이트를 확인해주세요! 👀">
+    <!-- E: open graph -->
     <link rel="apple-touch-icon" href="images/favicon/icon2.png">
     <link rel="icon" href="images/favicon/icon2.png">
     <link rel="stylesheet" href="css/reset.css">
@@ -16,6 +22,7 @@
     <link rel="stylesheet" href="css/modal-style.css">
     <link rel="stylesheet" href="css/media-query.css">
     <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="plugin/Chocolat-1.0.4/dist/css/chocolat.css">
     <!--AOS CSS CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css" integrity="sha512-hoGlO+71fSG6lgS60I4bKvsFVB+bAnrVFDYlwSXoyNLppDcoupwJB7KbWq/63iACKn3gcgK9jMXd+T+YDeVrGQ==" crossorigin="anonymous" />
     <!--[if lt IE 11]> 
@@ -47,7 +54,6 @@
                         <li><a href="#about">About me</a></li>
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#design">Design</a></li>
-                        <li><a href="#practice">Practice</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -71,15 +77,14 @@
             <div class="intro" data-aos="fade-up" data-aos-duration="1500">
                 <img src="images/profile/profile2.png" alt="profile">
                 <h2><span>안</span>녕하세요.</h2>
-                <h3>신입 웹 퍼블리셔 <span>문채은</span>입니다.<br />
-                    꾸준히 노력하며 포기보다는 <span>도전</span>과 <span>열정</span>으로
-                    차근차근 자신의 분야를 넓혀가는 퍼블리셔가 되겠습니다.<br />
+                <h3><span>웹 표준</span>과 <span>접근성</span>을 준수하며, 사용자들에게 최상의 사용 경험을 제공하기 위해 노력하고 있습니다. 사용자와 개발자, 디자이너 간의 <span>원활한 소통</span>을 통해 웹사이트를 더욱 <span>향상</span>시키는 것을 목표로 하고 있습니다.<br />
                 </h3>
             </div>
             <div class="edu info_wrapper" data-aos="fade-up" data-aos-duration="1500">
                     <h2><img src="images/icon/education.png" alt="education">Experience</h2>
                     <ul class="info_list ex_list">
-                        <li><span class="date">2021.03 ~ 2023.04</span><span>아자스쿨(주) 개발팀 주임</span></li>
+                        <li><span class="date">2021.03 ~ 2023.04.21</span><span>아자스쿨(주) 개발팀 주임<span class="ex_link modal_btn" data-target="#ajaschool">더보기</span></span></li>
+                        <li><span class="date">2020.12 ~ 2021.02</span><span>이엠컴퍼니<span class="ex_link modal_btn" data-target="#emcompany">더보기</span></span></li>
                         <li><span class="date">2020.04 ~ 2020.06</span><span>이젠아카데미 [프론트엔드개발] 리액트(React) 과정 수료</span></li>
                         <li><span class="date">2019.07 ~ 2020.02</span><span>(주)비욘드더드림 개발팀 사원 퍼블리셔<span class="ex_link modal_btn" data-target="#exModal">더보기</span></span></li>
                         <li><span class="date">2018.07 ~ 2018.12</span><span>하이미디어학원 NCS 디지털 UI/UX(앱 개발/웹 퍼블리셔)과정 수료</span></li>
@@ -89,15 +94,15 @@
                 <div class="license info_wrapper" data-aos="fade-up" data-aos-duration="1500">
                     <h2><img src="images/icon/license.png" alt="license">Certificate</h2>
                     <ul class="info_list">
-                        <li><span class="date">2019.08</span><span>2종 보통 운전면허</span></li>
-                        <li><span class="date">2018.12</span><span>웹디자인기능사</span></li>
-                        <li><span class="date">2018.04</span><span>정보처리기사</span></li>
-                        <li><span class="date">2017.12</span><span>리눅스마스터 2급</span></li>
+                        <li><span class="date">2019.08.20</span><span>2종 보통 운전면허</span></li>
+                        <li><span class="date">2018.12.14</span><span>웹디자인기능사</span></li>
+                        <li><span class="date">2018.05.25</span><span>정보처리기사</span></li>
+                        <li><span class="date">2017.12.15</span><span>리눅스마스터 2급</span></li>
                     </ul>
                 </div>
             <div class="skill info_wrapper" data-aos="fade-up" data-aos-duration="1500">
                 <h2><img src="images/icon/skill.png" alt="skill">Skill</h2>
-                <p class="s_desc">HTML, CSS 등 이해하고 웹 표준성과 접근성에 맞춰 마크업 합니다. </p>
+                <p class="s_desc">최신 기술에 대해 공부하며 웹 표준성과 접근성에 맞춰 마크업합니다.</p>
                 <p class="s_desc">데스크탑, 태블릿, 모바일 등 다양한 기기에 맞는 반응형 작업이 가능합니다.</p>
                 <ul>
                     <li>Photoshop<div class="list"><span>
@@ -129,6 +134,20 @@
         </section>
         <section id="projects" class="contents">
             <h1 class="title">Projects</h1>
+            <div class="portfolio" data-aos="fade-up" data-aos-duration="1500">
+                <img class="p_img" src="images/portfolio/ajaschool.png" alt="아자스쿨">
+                <div class="sub_txt">
+                    <h2 class="p_title">아자스쿨<p class="p_sub_title">Ajaschool</p>
+                    </h2>
+                    <p>체험학습 O2O 플랫폼</p>
+                    <p>개발팀 주임 / 2021.03.02 ~ 2023.04.21 </p>
+                    <p>담당 : 관리자 UI 개발, UI/UX 디자인,<br /> 배너, 상세페이지 디자인</p>
+                    <div class="btn">
+                        <div class="eff"></div>
+                        <a href="javascript:void(0)" class="modal_btn" data-target="#ajaschool">More</a>
+                    </div>
+                </div>
+            </div>
             <div class="portfolio" data-aos="fade-up" data-aos-duration="1500">
                 <img class="p_img" src="images/portfolio/lighthouseud.png" alt="라이트하우스">
                 <div class="sub_txt">
@@ -164,6 +183,19 @@
                 </div>
             </div>
             <div class="portfolio" data-aos="fade-up" data-aos-duration="1500">
+                <img class="p_img" src="images/portfolio/netflix.png" alt="넷플릭스 클론 코딩">
+                <div class="sub_txt">
+                    <h2 class="p_title">넷플릭스 클론코딩<p class="p_sub_title">netfilx-clone</p>
+                    </h2>
+                    <p>React 문법 공부용 페이지입니다.</p>
+                    <h4>React, TMDB API, firebase</h4>
+                    <div class="btn">
+                        <div class="eff"></div>
+                        <a href="https://netflix-clone-1212f.web.app/" target="_blank">Veiw</a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio" data-aos="fade-up" data-aos-duration="1500">
                 <img class="p_img" src="images/portfolio/kakaofriends.png" alt="카카오프렌즈샵">
                 <div class="sub_txt">
                     <h2 class="p_title">카카오프렌즈샵<p class="p_sub_title">kakaofriends</p>
@@ -192,62 +224,61 @@
                 </div>
             </div>
         </section>
-        <section id="design" class="contents">
+        <section id="design" class="contents bg_section">
             <h1 class="title">Design</h1>
-            <ul class="img-list" data-aos="fade-up" data-aos-duration="1500">
-                <li><a href="#imgModal">
-                        <p><img src="images/icon/plus.png" alt="확대"></p><img class="imgSrc" src="images/design/design1.jpg" alt="출석 체크 이벤트 페이지">
-                    </a></li>
-                <li><a href="#imgModal">
-                        <p><img src="images/icon/plus.png" alt="확대"></p><img class="imgSrc" src="images/design/design2.jpg" alt="오픈 이벤트 페이지">
-                    </a></li>
-                <li><a href="#imgModal">
-                        <p><img src="images/icon/plus.png" alt="확대"></p><img class="imgSrc" src="images/design/design3.jpg" alt="멈칫 상세페이지">
-                    </a></li>
-                <li><a href="#imgModal">
-                        <p><img src="images/icon/plus.png" alt="확대"></p><img class="imgSrc" src="images/design/design4.jpg" alt="나이키 배너">
-                    </a></li>
-                <li><a href="#imgModal">
-                        <p><img src="images/icon/plus.png" alt="확대"></p><img class="imgSrc" src="images/design/design5.png" alt="지마켓 배너">
-                    </a></li>
-                <li><a href="#imgModal">
-                        <p><img src="images/icon/plus.png" alt="확대"></p><img class="imgSrc" src="images/design/design7.jpg" alt="탐앤탐스 배너">
-                    </a></li>
-            </ul>
-            <div id="imgModal" class="modal">
-                <p class="close"></p>
-                <img class="modal-content" alt="디자인이미지">
-                <div class="caption"></div>
-            </div>
-        </section>
-        <section id="practice" class="contents bg_section">
-            <h1 class="title">Practice</h1>
-            <div class="container">
-                <div class="box_wrapper">
-                    <div class="p_box">
-                        <a href="https://netflix-clone-1212f.web.app/" target="_blank">
-                            <div class="p_thum">
-                                <img src="images/practice-thum/netfilx-clone-thum.jpg" alt="netfilx-clone coding">
-                            </div>
-                            <div class="p_txt">
-                                <h3 class="p_title">netfilx-clone coding</h3>
-                                <p class="p_desc">React, TMDB API, firebase</p>
-                            </div>
-                        </a>
-                    </div>
-                    <!--<div class="p_box">
-                        <a href="//coconu6956.github.io/moving-gradient/" target="_blank">
-                            <div class="p_thum">
-                                <img src="images/practice-thum/moving-gradient-thum.jpg" alt="moving-gradient">
-                            </div>
-                            <div class="p_txt">
-                                <h3 class="p_title">moving-gradient</h3>
-                                <p class="p_desc">canvus, Javascript</p>
-                            </div>
-                        </a>
-                    </div>-->
-                </div>
-            </div>
+            <article class="img_list" data-aos="fade-up" data-aos-duration="1500">
+                <a class="chocolat-image" href="images/design/aja/aja_banner_detail01.png" title="아자스쿨 - 메인페이지 배너 1">
+                    <p><img src="images/icon/plus.png" alt="확대"></p><img class="imgSrc" loading="lazy" src="images/design/aja/aja_banner_thumb01.png" alt="아자스쿨 - 메인페이지 배너 1">
+                </a>
+                <a class="chocolat-image" href="images/design/aja/aja_banner_detail02.png" title="아자스쿨 - 메인페이지 배너 2">
+                    <p><img src="images/icon/plus.png" alt="확대"></p><img class="imgSrc" loading="lazy" src="images/design/aja/aja_banner_thumb02.png" alt="아자스쿨 - 메인페이지 배너 2">
+                </a>
+                <a class="chocolat-image" href="images/design/aja/aja_banner_detail03.png" title="아자스쿨 - 메인페이지 배너 3">
+                    <p><img src="images/icon/plus.png" alt="확대"></p><img class="imgSrc" loading="lazy" src="images/design/aja/aja_banner_thumb03.png" alt="아자스쿨 - 메인페이지 배너 3">
+                </a>
+                <a class="chocolat-image" href="images/design/aja/aja_banner_detail04.png" title="아자스쿨 - 메인페이지 배너 4">
+                    <p><img src="images/icon/plus.png" alt="확대"></p><img class="imgSrc" loading="lazy" src="images/design/aja/aja_banner_thumb04.png" alt="아자스쿨 - 메인페이지 배너 4">
+                </a>
+                <a class="chocolat-image" href="images/design/aja/aja_teacher_detail.png" title="아자스쿨 - 강사모집 이벤트 페이지 / 220220">
+                    <p><img src="images/icon/plus.png" alt="확대"></p><img class="imgSrc" loading="lazy" src="images/design/aja/aja_teacher_detail.png" alt="아자스쿨 - 강사모집 이벤트 페이지 / 220220">
+                </a>
+                <a class="chocolat-image" href="images/design/aja/aja_springBg_detail.png" title="아자스쿨 - 플랫폼 봄 배경 / 230307">
+                    <p><img src="images/icon/plus.png" alt="확대"></p><img class="imgSrc" loading="lazy" src="images/design/aja/aja_springBg_thumb.png" alt="아자스쿨 - 플랫폼 봄 배경 / 230307">
+                </a>
+                <a class="chocolat-image" href="images/design/aja/aja_money_detail.png" title="아자스쿨 - 화폐박물관 상세페이지 / 221230">
+                    <p><img src="images/icon/plus.png" alt="확대"></p><img class="imgSrc" loading="lazy" src="images/design/aja/aja_money_thumb.png" alt="아자스쿨 - 화폐박물관 상세페이지 / 221230">
+                </a>
+                <a class="chocolat-image" href="images/design/aja/aja_money_insta.jpg" title="아자스쿨 - 화폐박물관 인스타그램 광고 이미지 / 220519">
+                    <p><img src="images/icon/plus.png" alt="확대"></p><img class="imgSrc" loading="lazy" src="images/design/aja/aja_money_insta.jpg" alt="아자스쿨 - 화폐박물관 인스타그램 광고 이미지 / 220519">
+                </a>
+                <a class="chocolat-image" href="images/design/aja/aja_money_kakao.png" title="아자스쿨 - 화폐박물관 카카오채널 광고 메시지 이미지 / 220328">
+                    <p><img src="images/icon/plus.png" alt="확대"></p><img class="imgSrc" loading="lazy" src="images/design/aja/aja_money_kakao_thumb.png" alt="아자스쿨 - 화폐박물관 카카오채널 광고 메시지 이미지 / 220328">
+                </a>
+                <a class="chocolat-image" href="images/design/aja/aja_nametag_detail.png" title="아자스쿨 - 체험학습 이름표 디자인 / 220526">
+                    <p><img src="images/icon/plus.png" alt="확대"></p><img class="imgSrc" loading="lazy" src="images/design/aja/aja_nametag_thumb.png" alt="아자스쿨 - 체험학습 이름표 디자인 / 220526">
+                </a>
+                <a class="chocolat-image" href="images/design/aja/aja_dsplus_datil.png" title="아자스쿨 - 달성상회 상세페이지 작업 (25개) / 220608">
+                    <p><img src="images/icon/plus.png" alt="확대"></p><img class="imgSrc" loading="lazy" src="images/design/aja/aja_dsplus_thumb.png" alt="아자스쿨 - 달성상회 상세페이지 작업 (25개) / 220608">
+                </a>
+                <a class="chocolat-image" href="images/design/design3.jpg" title="개인작품 - 멈칫 상세페이지">
+                    <p><img src="images/icon/plus.png" alt="확대"></p><img class="imgSrc" loading="lazy" src="images/design/design3.jpg" alt="멈칫 상세페이지">
+                </a>
+                <a class="chocolat-image" href="images/design/design1.jpg" title="개인작품 - 출석 체크 이벤트 페이지">
+                        <p><img src="images/icon/plus.png" alt="확대"></p><img class="imgSrc" loading="lazy" src="images/design/design1.jpg" alt="출석 체크 이벤트 페이지">
+                    </a>
+                <a class="chocolat-image" href="images/design/design2.jpg" title="개인작품 - 오픈 이벤트 페이지">
+                        <p><img src="images/icon/plus.png" alt="확대"></p><img class="imgSrc" loading="lazy" src="images/design/design2.jpg" alt="오픈 이벤트 페이지">
+                    </a>
+                <a class="chocolat-image" href="images/design/design4.jpg" title="개인작품 - 나이키 배너">
+                        <p><img src="images/icon/plus.png" alt="확대"></p><img class="imgSrc" loading="lazy" src="images/design/design4.jpg" alt="나이키 배너">
+                    </a>
+                <a class="chocolat-image" href="images/design/design5.png" title="개인작품 - 지마켓 배너">
+                        <p><img src="images/icon/plus.png" alt="확대"></p><img class="imgSrc" loading="lazy" src="images/design/design5.png" alt="지마켓 배너">
+                    </a>
+                <a class="chocolat-image" href="images/design/design7.jpg" title="개인작품 - 탐앤탐스 배너">
+                        <p><img src="images/icon/plus.png" alt="확대"></p><img class="imgSrc" loading="lazy" src="images/design/design7.jpg" alt="탐앤탐스 배너">
+                    </a>
+            </article>
         </section>
         <section id="contact" class="contents">
             <div class="bg_wrap">
@@ -299,12 +330,128 @@
            </div>
         </div>
     </div>
-    <script src="js/jquery-2.2.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js" integrity="sha512-tnNM6PPNOVfZ5sGPw6hThCrcUBeqt2mVEk3EAj8tCtuMHqbuVm5/HsZagrr8W2aaFE+6rKIByGwQbEnmodrYVg==" crossorigin="anonymous"></script>
+    <div id="ajaschool" class="modal">
+        <!-- Modal content -->
+        <div class="modal_content center">
+           <div class="modal_header">
+               <h6 class="modal_title">주요 업무</h6>
+               <p class="modal_close">&times;</p>
+           </div>
+           <div class="modal_body">
+               <div class="career_box">
+                    <p class="career_title">[ 담당 업무 ]</p>
+                   <p class="career_info">체험학습 O2O 플랫폼, 관리자 UI 개발</p>
+                    <p class="career_info">UI/UX 디자인, 배너, 상세페이지 디자인</p>
+               </div>
+               <div class="career_box">
+                   <p class="career_title">[ 아자스쿨 플랫폼 리뉴얼 ]</p>
+                   <p class="career_info">- 기간 : 2021.04 ~ 07</p>
+                   <p class="career_info">- 담당 : 디자인(20%), UI구현(100%)</p>
+                   <p class="career_info">- 디자이너님과 소통 후 부분디자인했습니다.(상품페이지/로그인/회원가입/결제페이지등)</p>
+                   <p class="career_info">- 기존 적응형으로 되어있던 사이트를 모바일 최적화 형식으로 반응형으로 작업했습니다.</p>
+                   <p class="career_info">- 모바일용,웹용으로 2번 작업 되었던 디자인 작업과 개발 과정이줄고 작업물이 통일되었습니다.</p>
+                   <p class="career_info">- 웹용에서는 이벤트성 배경을 적용할 수 있게 되었습니다. 사용자에게 다양한 시각적 효과를 제공할 수 있었습니다.</p>
+                   <a class="career_link" href="https://www.ajaschool.com/" target="_blank">https://www.ajaschool.com/</a>
+               </div>
+               <div class="career_box">
+                    <p class="career_title">[ 플랫폼 신규기능 - 내 주변 체험 ]</p>
+                    <p class="career_info">- 기간 :  2023.01 ~ 03</p>
+                    <p class="career_info">- 담당 : 디자인(100%), UI구현(100%)</p>
+                    <p class="career_info">- 기존엔 하루 전,예약 형식에서 현재 사용자의 위치를 기반으로 실시간 교육 신청하는 기능입니다.</p>
+                    <p class="career_info">- 사용자 위도, 경도를 property로 Ajax통신해 특정 반경내 교육 리스트 데이터를 받아 kakao map api를 활용해 지도에 마커를 위치시켰습니다.</p>
+                    <p class="career_info">- 앱으로 위치서비스를 사용하기 위해 Ios, Android location permission 추가 코드 구현 및 앱 배포했습니다S</p>
+                    <p class="career_info">- 웹용에서는 이벤트성 배경을 적용할 수 있게 되었습니다. 사용자에게 다양한 시각적 효과를 제공할 수 있었습니다.</p>
+                    <a class="career_link" href="https://www.ajaschool.com/locaionmain.php" target="_blank">https://www.ajaschool.com/locaionmain.php</a>
+               </div>
+               <div class="career_box">
+                <p class="career_title">[ 관리자 UI 리뉴얼 ]</p>
+                <p class="career_info">- 기간 :  2021.07 ~ 08</p>
+                <p class="career_info">- 담당 : UI구현(100%)</p>
+                <p class="career_info">- 웹만 지원하던 형식에서 모바일까지 지원하도록 변경했습니다. 이 과정에서 특히 관리자 형식에서 주로 사용되는 테이블구현에 고려했습니다.</p>
+                <p class="career_info">- 컴포넌트 단위로 상태에 따라 구분해서 제작해 재사용성을 높였습니다</p>
+               </div>
+               <div class="career_box">
+                   <p class="career_title">[ 오프라인 체험학습 센터 CRM 개발 ]</p>
+                   <p class="career_info">- 기간 :  2021.09</p>
+                    <p class="career_info">- 담당 : UI구현(100%)</p>
+                    <p class="career_info">- 오프라인에서 운영하는 체험학습센터 ‘아자 탐구생활' 고객 관리 서비스입니다.</p>
+                    <p class="career_info">- 센터를방문한사용자들입출입관리합니다.</p>
+                    <p class="career_info">- 태블릿환경에맞춰개발되었습니다.PWA기능을추가해앱과같이태블릿환경에서이용하기쉽게했습니다.</p>
+               </div>
+               <div class="career_box">
+                   <p class="career_title">[ 사용자 분석 ]</p>
+                   <p class="career_info">[ GoogleAnalytics(GA4) ]</p>
+                   <p class="career_info">- 이벤트설정하며이벤트명규칙을만들어일관성을유지했습니다.</p>
+                   <p class="career_info">- 구글시트로공유문서로만들어업데이트내용을수시로확인할수있으며공유하기쉽게했습니다.</p>
+
+                   <p class="career_info">[ Hotjar ]</p>
+                   <p class="career_info">- 히트맵분석기능을통해의도된UI가사용자에게전달되었는지확인했습니다.</p>
+                   <p class="career_info">- 레코딩기능을통해사용자들의행동을확인하며불편함을감소시켰습니다.</p>
+               </div>
+           </div>
+           <div class="modal_footer">
+               <div class="btn_block right">
+                   <p class="light_btn modal_close">닫기</p>
+               </div>
+           </div>
+        </div>
+    </div>
+    <div id="emcompany" class="modal">
+        <!-- Modal content -->
+        <div class="modal_content center">
+           <div class="modal_header">
+               <h6 class="modal_title">주요 업무</h6>
+               <p class="modal_close">&times;</p>
+           </div>
+           <div class="modal_body">
+               <div class="career_box">
+                   <p class="career_info">Cafe24 쇼핑몰 솔로션 활용 사이트 제작
+                    4개의 사이트 유지보수 및 개발</p>
+                    <p class="career_info">4개의 사이트 유지보수 및 개발</p>
+               </div>
+               <div class="career_box">
+                    <p class="career_title">[ em company ]</p>
+                    <p class="career_info">회사 홈페이지</p>
+                    <a class="career_link" href="https://emcompany.or.kr/" target="_blank">https://emcompany.or.kr/</a>
+               </div>
+               <div class="career_box">
+                   <p class="career_title">[ emcok ]</p>
+                   <p class="career_info">글로벌 온라인 오디션 플랫폼</p>
+                   <a class="career_link" href="https://emcok.kr/" target="_blank">https://emcok.kr/</a>
+               </div>
+               <div class="career_box">
+                    <p class="career_title">[ 이엠메모리 ]</p>
+                    <p class="career_info">온라인 장례 플랫폼</p>
+                </div>
+                <div class="career_box">
+                    <p class="career_title">[ GEM MALL ]</p>
+                    <p class="career_info">코로나 관련 항코로나 제품들을 판매하는 종합 쇼핑몰</p>
+                </div>
+           </div>
+           <div class="modal_footer">
+               <div class="btn_block right">
+                   <p class="light_btn modal_close">닫기</p>
+               </div>
+           </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js" integrity="sha512-tnNM6PPNOVfZ5sGPw6hThCrcUBeqt2mVEk3EAj8tCtuMHqbuVm5/HsZagrr8W2aaFE+6rKIByGwQbEnmodrYVg==" crossorigin="anonymous"></script>
     <script src="js/dark-mode.js"></script>
+    <script src="plugin/Chocolat-1.0.4/dist/js/chocolat.js"></script>
     <script src="js/script.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        Chocolat(document.querySelectorAll('.chocolat-image'), {
+            // options here
+            loop: true,
+            // pagination: function () {
+            //     const last = this.settings.lastImageIndex + 1
+            //     const position = this.settings.currentImageIndex + 1
+            //     return position + '/' + last
+            // }
+        })
     </script>
     <!--연도 JS-->
     <script>
@@ -329,29 +476,6 @@
                 $('.modal').hide();
             });
 
-        });
-    </script>
-    <script>
-        var $modal = $("#imgModal"); //팝업 div
-        var imgsUrl; //이미지 url
-        var altText; //이미지안 alt값 출력
-        $(".img-list li>a").on("click", function(e) { //클릭 이벤트
-            e.preventDefault();
-            var _index = $(this).parent().index(); //해당 index 찾기
-            var _indexTar = $(".img-list li").eq(_index); //해당 인덱스
-            $(".img-list li").removeClass("open"); //"open" 클래스 삭제
-            _indexTar.addClass("open"); //"open" 클래스 추가
-            imgsUrl = _indexTar.find(".imgSrc").attr("src"); //이미지 경로에 src경로 찾기
-            altText = _indexTar.find(".imgSrc").attr("alt"); //이미지 경로에 alr값 찾기
-            $modal.find(".caption").text(altText); // 팝업 텍스트 출력
-            $modal.find(".modal-content").attr("src", imgsUrl); //해당 팝업 안에 이미지 넣기
-            $modal.find(".modal-content").attr("id", ""); //팝업안 이미지 순서
-            $modal.find(".modal-content").attr("id", "imgs_" + _index); //팝업안 이미지 순서
-            $modal.fadeIn(); //팝업 열기
-        });
-        $(".close").on("click", function(e) {
-            e.preventDefault();
-            $modal.fadeOut(); //팝업 닫기
         });
     </script>
 </body>
