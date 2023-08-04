@@ -49,6 +49,69 @@
 
 }
 
+@media screen and (max-width:1024px) {
+    #about .intro h3 {
+        font-size: 1em;
+    }
+
+    #about .intro img {
+        width: 340px;
+    }
+
+    #about .edu {
+        width: 90%;
+    }
+
+    #about .info_list li, #about .info_list li .date {
+        font-size: 1em;
+    }
+
+    .portfolio img, .portfolio_2 img {
+        width: 45%;
+        margin-right: 3%;
+    }
+
+    .portfolio h2, .portfolio_2 h2 {
+        font-size: 1.85em;
+    }
+    .sub_txt {
+        margin-top: 100px;
+    }
+    .sub_txt h4,
+    .sub_txt > p {
+        font-size: 1em;
+    }
+
+    .btn {
+        width: 150px;
+        height: 50px;
+
+    }
+
+    .btn a {
+        font-size: 1.3em;
+        line-height: 50px;
+    }
+
+    .i_link_wrapper .icon_link {
+        width: 25px;
+        height: 25px;
+    }
+
+    #design .img_list {
+        text-align: center;
+    }
+
+    #design .img_list a {
+        width: 180px;
+        height: 180px;
+    }
+
+    #contact > div > ul {
+        font-size: 1.3em;
+    }
+}
+
 /*태블릿 화면크기 481~980px 사이즈까지 적용 */
 @media screen and (max-width:980px) {
     header {}
